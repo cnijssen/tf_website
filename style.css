@@ -1,0 +1,416 @@
+*{
+  margin: 0;
+  padding 0;
+  font-family: 'Poppins', sans-serif;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image:url(images/AppleBackground2.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 45px;
+    padding-left: 18%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3% 30px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44366;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    
+}
+.text-box p{
+    margin: 375px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    
+    
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    color: #000000;
+    border: 1px solid #fff;
+    background: #fff;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    nav img{
+    padding: 30% 40%;
+    width: 28px;
+    }
+    .text-box{
+        top: 54%;
+    }
+    .text-box p{
+        margin: 290px 0 40px;
+    }
+    .text-box h1{
+        font-size: 52px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li::after{
+        transition: 0s;
+    }
+    .hero-btn:hover{
+        transition: 0s;
+    }
+    .nav-links{
+        position: absolute;
+        background: #222222;
+        height: 100vh;
+        width: 30vh;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2; 
+        transition: 1s;
+    }  
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 10px;
+    }
+}
+
+/*----- Weetjes -----*/
+
+.weetjes{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.weetjes-col{
+    flex-basis: 31%;
+    background: #ECECEC;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.weetjes-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+    transform: scale(1.025)
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*----- Footer -----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #777;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+
+
+
+/*----- Informatie pagina -----*/
+.sub-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url(images/ApplePark.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #FFF;
+}
+.sub-header h1{
+    margin-top: 5px;
+}
+.sub-header p{
+    color: #fff;
+}
+.sub-header nav img{
+    width: 45px;
+    padding-left: 18%;
+}
+
+    /*---- Homebrew Computer Club ----*/
+
+.informatie{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.informatie-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.informatie-col img{
+    box-shadow: 0 0 30px 0px rgba(0,0,0,0.7);
+    border-radius: 15px;
+    width: 100%;
+}
+.informatie-col h1{
+    padding-top: 0px;
+}
+.informatie-col p{
+    padding: 15px 0 25px;
+}
+
+@media(max-width: 700px){
+    .sub-header nav img{
+      padding: 30% 40%;
+      width: 28px;  
+    }
+}
+.img-bron li{
+    list-style: none;
+}
+.img-bron p{
+    color: #000000;
+    margin-top: -5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.informatie-col a img{
+    transition: 0.5s;
+}
+.informatie-col a img:hover{
+    box-shadow: 0 0 50px 0px rgba(0,0,0,0.9);
+    transform: scale(1.03)
+}
+
+    /*---- Apple 1 en 2 ----*/
+
+.informatie1{
+    width: 80%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+.informatie1-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.informatie1-col img{
+    box-shadow: 0 0 30px 0px rgba(0,0,0,0.7);
+    border-radius: 15px;
+    width: 100%;
+}
+.informatie1-col h1{
+    text-align: center;
+    padding-top: 0px;
+}
+.informatie1-col h3{
+    color: #404040;
+    margin-bottom: -10px;
+}
+.informatie1-col p{
+    text-align: center;
+    padding: 15px 0 25px;
+}
+.informatie1-col a img{
+    transition: 0.5s;
+}
+.informatie1-col a img:hover{
+    box-shadow: 0 0 50px 0px rgba(0,0,0,0.9);
+    transform: scale(1.03)
+}
+.img-bron p{
+    text-align: left;
+}
+
+
+ /*---- Macintosh ----*/
+
+.informatie2{
+    width: 80%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+.informatie2-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.informatie2-col img{
+    filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.4));
+    width: 100%;
+    border-radius: 15px;
+}
+.informatie2-col h1{
+    padding-top: 0px;
+}
+.informatie2-col p{
+    padding: 15px 0 25px;
+}
+.informatie2-col a img{
+    transition: 0.5s;
+}
+.informatie2-col a img:hover{
+    filter: drop-shadow(40px 40px 40px rgba(0,0,0,0.6));
+    transform: scale(1.03)
+}
+
+
+/*----- Bronnen -----*/
+.sub-header1{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url(images/AppleBron.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #FFF;
+}
+.sub-header1 h1{
+    margin-top: 255px;
+}
+.sub-header1 p{
+    color: #fff;
+}
+.sub-header1 nav img{
+    width: 45px;
+    padding-left: 18%;
+}
+
+@media(max-width: 700px){
+    .sub-header1 nav img{
+      padding: 30% 40%;
+      width: 28px;  
+    }
+}
+.bronnen{
+    width: 100%;
+    margin: auto;
+    padding-top: 0px;
+    text-align: left;
+}
+.bronnen-col{
+    flex-basis: 100%;
+    padding: 30px 2px;  
+}
+.bronnen-col h3{
+    margin-left: 200px;
+    text-align: left; 
+}
+.bronnen-col p{
+    padding: 0px 0 25px;
+    margin-left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
